@@ -109,6 +109,7 @@
                 LEFT JOIN user_info ui ON ( ui.id = si.user_id )
         WHERE
             1 = 1
+        AND si.status = 1
     </select>
 
     <!-- 获取商铺及商品详细信息 -->

@@ -14,10 +14,10 @@ page {
 }
 .cu-custom .cu-bar{
     padding-right:inherit;
-    background-image:linear-gradient(45deg, #4cc8ee, #1680e2ef);
+    background-image:linear-gradient(45deg, #a3f3a3, #1ee649ef);
 }
 .bg-gradual-green {
-    background-image:linear-gradient(45deg, #4cc8ee, #1680e2ef);
+    background-image:linear-gradient(45deg, #a3f3a3, #1ee649ef);
 }
 .text-green, .line-green, .lines-green {
     color:#e45c5c;

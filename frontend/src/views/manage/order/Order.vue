@@ -136,6 +136,7 @@ export default {
     columns () {
       return [{
         title: '订单编号',
+        ellipsis: true,
         dataIndex: 'code'
       }, {
         title: '商品名称',
@@ -160,6 +161,7 @@ export default {
         }
       }, {
         title: '商品类型',
+        ellipsis: true,
         dataIndex: 'typeName',
         customRender: (text, row, index) => {
           if (text !== null) {
@@ -170,6 +172,7 @@ export default {
         }
       }, {
         title: '订单价格',
+        ellipsis: true,
         dataIndex: 'orderPrice',
         customRender: (text, row, index) => {
           if (text !== null) {
@@ -180,10 +183,12 @@ export default {
         }
       }, {
         title: '发起人',
+        ellipsis: true,
         dataIndex: 'userName',
         scopedSlots: { customRender: 'userNameShow' }
       }, {
         title: '联系方式',
+        ellipsis: true,
         dataIndex: 'phone'
       }, {
         title: '收获地址',
@@ -191,6 +196,7 @@ export default {
         scopedSlots: { customRender: 'addressShow' }
       }, {
         title: '下单时间',
+        ellipsis: true,
         dataIndex: 'createDate',
         customRender: (text, row, index) => {
           if (text !== null) {

@@ -28,9 +28,9 @@
                         <view class="cu-avatar radius lg" style="background-image:url(http://127.0.0.1:9527/imagesWeb/{{ item.image }});"></view>
                         <view class='content canui-xzwz tow' style="padding-left: 15px">
                             {{ item.name }}
-                            <view style="font-size: 12px" wx:if="{{ item.type == 1 }}">食品</view>
+                            <!-- <view style="font-size: 12px" wx:if="{{ item.type == 1 }}">食品</view>
                             <view style="font-size: 12px" wx:if="{{ item.type == 2 }}">饮品</view>
-                            <view style="font-size: 12px" wx:if="{{ item.type == 3 }}">药品</view>
+                            <view style="font-size: 12px" wx:if="{{ item.type == 3 }}">药品</view> -->
                         </view>
                         <view class='action' style="padding-left: 15px">
                             <view class='text-price'>{{ item.price }}</view>

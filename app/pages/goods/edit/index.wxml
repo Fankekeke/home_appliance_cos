@@ -14,7 +14,7 @@
         <van-field type='number' model:value="{{ price }}" label="商品价格" placeholder="请输入" style="display: block;margin-top: 10px;" />
         <van-cell title="商品类型" is-link value="{{vaa}}" arrow-direction="down" bind:click="toggleBottomPopup" style="display: block;margin-top: 10px;" />
         <van-popup show="{{ bottom }}" position="bottom" custom-class="bottom" bind:close="toggleBottomPopup2">
-            <van-picker show-toolbar title="商品类型" columns="{{ column1 }}" bind:change="onChange1" bind:confirm="onConfirm" />
+            <!-- <van-picker show-toolbar title="商品类型" columns="{{ column1 }}" bind:change="onChange1" bind:confirm="onConfirm" /> -->
         </van-popup>
         <van-field model:value="{{ content }}" label="介绍" type="textarea" placeholder="请输入" style="display: block;margin-top: 15px;" autosize border="{{ false }}" />
         <van-radio-group value="{{ radio }}" bind:change="onChange">

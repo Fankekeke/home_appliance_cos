@@ -1,4 +1,4 @@
-<view class='UCenter-bg' style="background-image: linear-gradient(45deg, #4cc8ee, #1680e2ef);height: 400rpx;">
+<view class='UCenter-bg' style="background-image: linear-gradient(45deg, #a3f3a3, #1ee649ef);height: 400rpx;">
     <block wx:if="{{!hasUserInfo}}">
         <!-- canIUseGetUserProfile判断当前版本是否支持wx.getUserProfile方法 -->
         <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" class="cu-btn round shadow">登陆</button>

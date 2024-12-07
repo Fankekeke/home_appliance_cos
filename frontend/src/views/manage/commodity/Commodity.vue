@@ -138,13 +138,16 @@ export default {
     columns () {
       return [{
         title: '商品编号',
+        ellipsis: true,
         dataIndex: 'code'
       }, {
         title: '商品名称',
+        ellipsis: true,
         dataIndex: 'name'
       }, {
         title: '所属商铺',
         dataIndex: 'shopName',
+        ellipsis: true,
         customRender: (text, row, index) => {
           if (text !== null) {
             return text
@@ -155,6 +158,7 @@ export default {
       }, {
         title: '商品价格',
         dataIndex: 'price',
+        ellipsis: true,
         customRender: (text, row, index) => {
           if (text !== null) {
             return text + '元'
@@ -165,6 +169,7 @@ export default {
       }, {
         title: '库存数量',
         dataIndex: 'stockNum',
+        ellipsis: true,
         customRender: (text, row, index) => {
           if (text !== null) {
             return text
@@ -175,6 +180,7 @@ export default {
       }, {
         title: '型号',
         dataIndex: 'model',
+        ellipsis: true,
         customRender: (text, row, index) => {
           if (text !== null) {
             return text
@@ -185,6 +191,7 @@ export default {
       }, {
         title: '创建时间',
         dataIndex: 'createDate',
+        ellipsis: true,
         customRender: (text, row, index) => {
           if (text !== null) {
             return text
@@ -207,6 +214,7 @@ export default {
       }, {
         title: '备注',
         dataIndex: 'content',
+        ellipsis: true,
         scopedSlots: { customRender: 'contentShow' }
       }, {
         title: '操作',

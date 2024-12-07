@@ -8,21 +8,12 @@ Page({
 		current: 0,lines: 0,
 		swiperlist: [{
 			id: 0,
-			url: 'https://www.nvidia.cn/content/nvidiaGDC/cn/zh_CN/software/nvidia-app/_jcr_content/root/responsivegrid/nv_container_3398778/nv_container/nv_teaser.coreimg.100.630.jpeg/1730262797264/game-ready-drivers-ari.jpeg',
+			url: 'https://i02.appmifile.com/758_operator_hk/28/11/2024/0e1a08409bda230e31c6a29316550034.jpg',
 			type: 1
 		}, {
 			id: 1,
-			url: 'https://www.nvidia.cn/content/nvidiaGDC/cn/zh_CN/software/nvidia-app/_jcr_content/root/responsivegrid/nv_container_3398778/nv_container/nv_teaser_483136130.coreimg.100.630.jpeg/1730262804626/nvidia-studio-drivers-ari.jpeg',
+			url: 'https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-vacuum-cleaner-g20-max/PC/64300d2ceef6f338265d461161ce8906.jpg',
 			type: 2
-
-		}, {
-			id: 2,
-			url: 'https://www.nvidia.cn/content/dam/en-zz/Solutions/software/nvidia-app/nvidia-app-gpu-control-center-bm-l580-d.jpg',
-			type: 3
-		}, {
-			id: 3,
-			url: 'https://www.nvidia.cn/content/dam/en-zz/Solutions/software/nvidia-app/nvidia-app-shadowplay-bm-l580-d.jpg',
-			type: 4
 		}],
 		iconList: [{
 			id: 1,

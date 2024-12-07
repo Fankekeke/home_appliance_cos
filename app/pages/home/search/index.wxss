@@ -9,7 +9,7 @@ page {
 }
 .cu-custom .cu-bar{
     padding-right:inherit;
-    background-image:linear-gradient(45deg, #4cc8ee, #1680e2ef);
+    background-image:linear-gradient(45deg, #a3f3a3, #1ee649ef);
 }
 .canui-goods-nav{
     position: relative;
