@@ -432,6 +432,11 @@ public class WebController {
             orderInfo.setAddressId(addressInfo.getId());
         }
 
+        CommodityInfo commodityInfo = commodityInfoService.getOne(Wrappers.<CommodityInfo>lambdaQuery().eq(CommodityInfo::getId, orderInfo.getCommodityId()));
+        if (commodityInfo != null) {
+            orderInfo.setShopId(commodityInfo.getShopId());
+        }
+
         // 添加订单详情
         OrderDetail orderDetail = new OrderDetail();
         orderDetail.setCode(orderInfo.getCode());
@@ -497,6 +502,11 @@ public class WebController {
                 .eq(AddressInfo::getDefaultAddress, 1));
         if (addressInfo != null) {
             orderInfo.setAddressId(addressInfo.getId());
+        }
+
+        CommodityInfo commodityInfo = commodityInfoService.getOne(Wrappers.<CommodityInfo>lambdaQuery().eq(CommodityInfo::getId, orderInfo.getCommodityId()));
+        if (commodityInfo != null) {
+            orderInfo.setShopId(commodityInfo.getShopId());
         }
 
         // 添加订单详情
