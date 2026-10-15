@@ -1,17 +1,17 @@
-### 基于SpringBoot + Vue的家庭电器购买平台.
+![](https://img.shields.io/badge/License-MIT-blue.svg)
 
-家用电器电商平台、家电在线商城、家庭电器零售平台
+![](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)
 
-#### 商铺管理员功能模块介绍：
-###### 商铺信息：维护家电店铺的基本资料，如名称、简介和营业状态。我的商品：管理本店上架的家用电器，支持编辑、上下架操作。商铺订单：处理用户下单、发货、退换货等全流程订单事务。订单评价：查看顾客对家电产品及服务的评分与文字反馈。消息回复：及时响应用户咨询、投诉或平台通知消息。商铺审核：提交资质材料，配合平台完成入驻或年审流程。用户沟通：与买家在线交流，解答产品功能、安装等问题。
+![](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
-#### 系统管理员功能模块介绍：
-###### 收货地址管理：监管用户配送地址，确保订单准确送达。商铺审核管理：审核家电商家资质，控制平台准入质量。公告信息：发布促销活动、系统公告或家电安全提示。商品管理：审核并管理全平台家电商品信息与合规性。用户评价：监控和处理用户对商品、商铺的评论内容。消息管理：统一管理平台内各类通知、私信与提醒。订单管理：跟踪全平台订单状态，协调异常订单处理。贴子管理：审核社区论坛发帖，维护健康交流环境。商铺管理：维护所有家电商铺资料，支持推荐或冻结操作。用户管理：管理用户账号，处理违规行为或安全问题。商品类型：配置家电分类，如冰箱、洗衣机、空调、厨电等。
+# 基于 SpringBoot + Vue 的家庭电器销售小程序 (Home Appliance Sales Mini Program)
 
-#### 用户功能模块介绍：
-###### 商铺详情：浏览家电店铺信息、主营品牌、评分及服务承诺。查看公告：阅读平台或商家发布的优惠、售后等重要通知。搜索商品：按品牌、型号或功能快速查找所需家用电器。系统论坛：参与家电使用、选购、维修等话题讨论。发帖回复：在社区中发表经验分享或回复他人帖子。用户订单：查看家电购买记录、物流进度及售后服务。加入购物车：将心仪家电暂存购物车，方便比价与结算。收货地址管理：管理多个收货地址，适配不同配送需求。订单评价：对已购家电进行使用体验评分与文字评价。联系客服：通过在线方式咨询产品、订单或安装问题。
+多商户入驻 · 电器选购 · 购物车 · 在线订单 · 论坛交流 · 商铺审核 · 订单评价 · 客服沟通
+
+本项目是一套面向家庭电器领域的多商户电商平台，采用前后端分离架构，覆盖系统管理员、商铺管理员、用户三类角色。系统围绕"商铺入驻审核、电器商品管理、购物车与订单、用户评价、系统论坛交流、客服消息沟通"等核心业务设计，支持用户浏览商铺、搜索商品、加入购物车、下单购买、参与论坛交流，商铺管理员管理本店商品与订单、回复用户咨询，系统管理员统筹平台商铺审核、商品分类、订单管理与内容审核，适用于家电垂直电商、多品牌电器商城、线上线下融合的电器销售场景。
 
 #### 安装环境
+️**注意**：请确保您的开发环境已安装以下依赖。
 
 JAVA 环境 
 
@@ -19,34 +19,160 @@ Node.js环境 [https://nodejs.org/en/] 选择14.17
 
 Yarn 打开cmd， 输入npm install -g yarn !!!必须安装完毕nodejs
 
-Mysql 数据库 [https://blog.csdn.net/qq_40303031/article/details/88935262] 一定要把账户和密码记住
+Mysql 数据库 一定要把账户和密码记住
 
 redis
 
-Idea 编译器 [https://blog.csdn.net/weixin_44505194/article/details/104452880]
+Idea 编译器
 
-WebStorm OR VScode 编译器 [https://www.jianshu.com/p/d63b5bae9dff]
+WebStorm OR VScode 编译器
 
 #### 采用技术及功能
 
 后端：SpringBoot、MybatisPlus、MySQL、Redis、
 前端：Vue、Apex、Antd、Axios
-报表：Spread.js
 
-平台前端：vue(框架) + vuex(全局缓存) + rue-router(路由) + axios(请求插件) + apex(图表)  + antd-ui(ui组件)
+平台前端：vue(框架) + vuex(全局缓存) + rue-router(路由) + axios(请求插件) + apex(图表)  + antd-ui(ui组件) + 百度地图 API
 
 平台后台：springboot(框架) + redis(缓存中间件) + shiro(权限中间件) + mybatisplus(orm) + restful风格接口 + mysql(数据库)
 
 开发环境：windows10 or windows7 ， vscode or webstorm ， idea + lambok
 
-#### 商铺管理员
-商铺信息、我的商品、商铺订单、订单评价、消息回复、商铺审核、用户沟通
+---
 
-#### 系统管理员
-收货地址管理、商铺审核管理、公告信息、商品管理、用户评价、消息管理、订单管理、贴子管理、商铺管理、用户管理、商品类型
+## 核心特性
 
-#### 用户
-商铺详情、查看公告、搜索商品、系统论坛、发帖回复、用户订单、加入购物车、收货地址管理、订单评价、联系客服
+- **多商户入驻模式**：支持多个电器商铺入驻平台，各商铺独立管理商品与订单，平台统一审核与监管。
+- **电器商品分类管理**：按家电品类（电视、冰箱、空调、洗衣机、厨电等）构建多级商品分类体系。
+- **购物车与订单流程**：支持跨店铺加购、购物车管理、下单支付、订单状态跟踪与收货确认。
+- **商铺审核机制**：商铺入驻需提交资质信息，系统管理员审核通过后方可上架商品与接单。
+- **用户评价系统**：用户可对购买的商品与商铺进行评分与文字评价，为其他消费者提供参考。
+- **系统论坛交流**：提供社区论坛功能，用户可发帖分享使用心得、交流家电选购经验。
+- **客服消息沟通**：用户可与商铺客服在线沟通咨询商品信息、售后服务，消息记录全程留存。
+- **商铺数据统计**：商铺管理员可查看本店订单统计、销售数据与用户评价，辅助经营决策。
+- **收货地址管理**：用户可维护多个收货地址，下单时灵活选择配送地址。
+- **公告信息发布**：系统管理员发布平台公告、促销活动、新品上架等信息，用户可查看。
+---
+
+## 适用场景
+
+- 家电垂直电商平台
+- 多品牌电器在线商城
+- 社区家电团购平台
+- 二手电器交易平台
+- 电器品牌官方商城
+- 家电选购交流与评测社区
+- 商铺入驻型综合电器商城
+---
+
+## 功能模块概览
+
+### 系统管理员端
+
+系统管理员端负责平台整体运营、商铺审核、商品分类管理、订单监管与内容审核：
+
+**平台基础管理**
+
+- **用户管理**：管理注册用户账号、实名认证状态、账户状态与违规处理。
+- **商铺管理**：查看所有入驻商铺列表，管理商铺基本信息、营业状态与违规处罚。
+- **商铺审核管理**：审核商铺入驻申请，核验营业执照、品牌授权等资质材料，批准或驳回入驻请求。
+- **公告信息**：发布平台公告、促销活动通知、系统维护信息与政策更新。
+- **消息管理**：管理平台消息通知模板，查看用户与商铺之间的客服消息记录，处理违规消息。
+
+**商品与分类管理**
+
+- **商品管理**：管理全平台商品列表，支持违规商品下架、商品审核与分类调整。
+- **商品类型**：管理电器商品多级分类体系（如大家电→电视→OLED电视），支持分类排序与图标配置。
+
+**订单与评价管理**
+
+- **订单管理**：查看全平台所有订单，包括订单号、商铺、用户、商品明细、金额与订单状态。
+- **平台订单统计**：按日/周/月统计平台总订单量、总销售额、各商铺销售排行与订单转化率。
+- **用户评价**：查看全平台用户对商品与商铺的评价，处理恶意差评与评价申诉。
+
+**论坛与内容管理**
+
+- **贴子管理**：管理社区论坛帖子，支持帖子审核、置顶、加精、删除与违规内容处理。
+
+**地址管理**
+
+- **收货地址管理**：查看用户维护的收货地址列表，处理地址异常与配送问题。
+
+### 商铺管理员端
+
+商铺管理员端面向入驻商铺的运营人员，负责本店商品、订单、评价与客服管理：
+
+**商铺信息管理**
+
+- **商铺信息**：维护商铺名称、Logo、简介、联系方式、经营品类、营业时间与资质文件。
+- **商铺审核**：查看商铺入驻审核状态，根据审核反馈补充或修改资质材料。
+
+**商品管理**
+
+- **我的商品**：管理本店商品，包括商品上架/下架、编辑商品标题、描述、价格、库存、规格参数与商品图片。
+
+**订单管理**
+
+- **商铺订单**：查看本店订单列表，处理待发货订单，录入物流信息，确认收货与退款申请。
+- **商家订单统计**：查看本店订单量、销售额、热销商品排行与订单状态分布统计。
+
+**评价与客服**
+
+- **订单评价**：查看用户对本店商品与服务的评分与文字评价，回复用户评价与处理差评。
+- **消息回复**：回复用户通过客服渠道发送的咨询消息，解答商品疑问、售后问题与配送咨询。
+- **用户沟通**：与用户进行在线实时沟通，查看历史消息记录，提升客户服务体验。
+
+### 用户端
+
+用户端面向电器消费者，通过微信小程序或 H5 提供商品浏览、下单购买、论坛交流与客服沟通功能：
+
+**账户与地址管理**
+
+- **账户注册登录**：支持手机号注册登录，密码加密存储，支持微信一键授权登录。
+- **收货地址管理**：添加、编辑、删除收货地址，设置默认收货地址。
+
+**商品浏览与购买**
+
+- **搜索商品**：按关键字搜索电器商品，支持按价格、销量、评价排序，按分类筛选。
+- **商铺详情**：查看商铺基本信息、经营品类、评分与在售商品列表。
+- **加入购物车**：将心仪商品加入购物车，修改购买数量，跨店铺结算。
+- **用户订单**：查看订单列表与详情，跟踪订单状态（待付款、待发货、已发货、已完成），确认收货与申请售后。
+- **订单评价**：对已完成订单的商品与商铺进行评分与文字评价，分享购物体验。
+
+**论坛与交流**
+
+- **系统论坛**：浏览社区论坛帖子，参与话题讨论，查看家电选购指南与使用心得。
+- **发帖回复**：在社区论坛发布帖子分享经验，回复他人帖子参与互动。
+- **查看公告**：查看平台发布的公告信息、促销活动与新品上架通知。
+
+**客服沟通**
+
+- **联系客服**：与商铺客服在线沟通，咨询商品信息、价格优惠、配送与售后问题。
+
+---
+
+## 项目结构
+
+```text
+pharmacy-dispensing-system/
+├── backend/            # 后端 API 服务
+│   ├── src/
+│   │   ├── controllers/  # 控制器
+│   │   ├── models/       # 数据模型
+│   │   ├── routes/       # 路由
+│   │   └── services/     # 业务逻辑
+│   └── package.json
+├── frontend/           # 前端 Web 应用
+│   ├── src/
+│   │   ├── views/      # 页面视图
+│   │   ├── components/ # 公共组件
+│   │   └── store/      # 状态管理
+│   └── package.json
+├── docs/               # 项目文档与 API 接口说明
+├── LICENSE
+└── README.md
+```
+---
 
 
 #### 前台启动方式
@@ -56,34 +182,27 @@ WebStorm OR VScode 编译器 [https://www.jianshu.com/p/d63b5bae9dff]
 #### 默认后台账户密码
 [管理员]
 admin
-1234qwer
+123456
 
 [商家]
-test1
-1234qwer
-
-[用户]
-小程序登录
+商家
+123456
 
 #### 项目截图
-
 |  |  |
 |---------------------|---------------------|
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733549748575.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733549731145.png) | 
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550223773.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550336212.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550211655.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550298972.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733549791031.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550291987.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733549760604.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550257701.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550234984.png) |  |
+| ![](./assets/image%20(1).png) | ![](./assets/image%20(2).png) |
+| ![](./assets/image%20(3).png) | ![](./assets/image%20(4).png) |
+| ![](./assets/image%20(5).png) | ![](./assets/image%20(6).png) |
+| ![](./assets/image%20(7).png) | ![](./assets/image%20(8).png) |
+| ![](./assets/image%20(9).png) | ![](./assets/image%20(10).png) |
+| ![](./assets/image%20(11).png) | |
 
-|  |  |
-|---------------------|---------------------|
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550585193.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550528985.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550572824.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550521611.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550563720.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550513448.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550546591.png) | ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550500291.png) |
-| ![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/1733550537839.png) |  |
-
+| ![](./assets/app_image%20(1).png) | ![](./assets/app_image%20(2).png) |
+| ![](./assets/app_image%20(3).png) | ![](./assets/app_image%20(4).png) |
+| ![](./assets/app_image%20(5).png) | ![](./assets/app_image%20(6).png) |
+| ![](./assets/app_image%20(7).png) | ![](./assets/app_image%20(8).png) |
+| ![](./assets/app_image%20(9).png) |  |
 
 #### 演示视频
 
@@ -101,9 +220,10 @@ WeChat: `Storm_Berserker`
 
 > 项目部署调试不好包退！功能逻辑没讲明白包退！
 
-![](https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/work/936e9baf53eb9a217af4f89c616dc19.png)
+<div align=center><img align="center" src="./assets/product_word.png" alt="fankekeke" /></div>
 
 #### 其它资源
+[2026年-答辩顺利通过-客户评价🀄](https://berserker287.github.io/2026/06/29/2026%E5%B9%B4%E7%AD%94%E8%BE%A9%E9%A1%BA%E5%88%A9%E9%80%9A%E8%BF%87/)
 
 [2025年-答辩顺利通过-客户评价🍜](https://berserker287.github.io/2025/06/18/2025%E5%B9%B4%E7%AD%94%E8%BE%A9%E9%A1%BA%E5%88%A9%E9%80%9A%E8%BF%87/)
 
@@ -127,4 +247,8 @@ WeChat: `Storm_Berserker`
 
 More info: [悲伤的橘子树](https://berserker287.github.io/)
 
-<p><img align="center" src="https://fank-bucket-oss.oss-cn-beijing.aliyuncs.com/img/%E5%90%88%E4%BD%9C%E7%89%A9%E6%96%99%E6%A0%B7%E5%BC%8F%20(3).png" alt="fankekeke" /></p>
+<div align="center"><img align="center" src="./assets/chat_qr_code.png" alt="fankekeke" width=250 /></div>
+
+<p><img align="center" src="./assets/wechat_group.png" alt="fankekeke" /></p>
+
+**感谢查看**
